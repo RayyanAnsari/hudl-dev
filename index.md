@@ -6,16 +6,13 @@ The Tesco Hudl is a tablet launched by British retailer Tesco in 2013. The devic
 
 | Developer           |	Tesco                                                                                                                        |
 | Manufacturer        |	Wistron Corporation                                                                                                          |
-| Release date	      | September 30, 2013                                                                                                           |
-| Introductory price	| £119                                                                                                                         |
-| Discontinued	      | October 22, 2015                                                                                                             |
-| Operating system	  | Android Jelly Bean                                                                                                           |
+| Operating system	  | Android Jelly Bean (4.2.2)                                                                                                   |
 | System on a chip	  | Quad-core Rockchip RK3188 w/ Mali 400 Graphics                                                                               |
 | Memory              |	1 GB RAM                                                                                                                     |
 | Storage	            | 16 GB flash memory                                                                                                           |
 | Display	            | IPS 7-inch (18 cm) LCD display<br/>1440 × 900 px (242 ppi; 95.3 ppcm) (WSXGA)<br/>16:10 aspect ratio<br/>(1080p HDMI output) |
 | Camera	            | 720p HD video; 3 MP rear (autofocus)<br/>2 MP front (fixed-focus)                                                            | 
-| Connectivity	      | Wi-Fi (802.11 a/b/g/n), Bluetooth 4.0, Micro-USB, Micro-HDMI                                                                 |
+| Wireless Chipset 	  | Broadcom BCM4334                                                                                                             |
 
 ### Building the Tesco Hudl's Kernel
 Tesco published the Hudl's kernel source on [this page](https://web.archive.org/web/20160322105950/https://www.tescotechsupport.com/downloads/). However, that website seems to be down now. Luckily for us, the kernel source has been uploaded to other places and archived on the Internet Archive. I also have a [mirror of this up on GitHub](https://github.com/WaluigiWare64/hudl-kernel/tree/stock). However, during compilation this errors out due to deprecated useage in the `timeconst.pl` Perl file. [I have created a branch](https://github.com/WaluigiWare64/hudl-kernel/tree/patched) called `patched` which fixes this issue.
